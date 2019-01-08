@@ -12,7 +12,7 @@ object SparkApp {
     conf.setAppName("My First App")
     val sc = new SparkContext(conf)
 
-    val myFile: RDD[String] = sc.textFile("/home/umesh/spark/emp.txt")
+    val myFile: RDD[String] = sc.textFile("src/main/resources/emp.txt")
 
     val empRecords = myFile.map(_.split(","))
 
@@ -24,6 +24,5 @@ object SparkApp {
       .mapValues(value => (1.0 * value._1) / value._2)
       .collectAsMap()
     println(avgOfSalaryForEachDesignation)
-
   }
 }
