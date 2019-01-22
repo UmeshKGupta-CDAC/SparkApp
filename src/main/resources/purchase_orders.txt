@@ -1,0 +1,9 @@
+emp1,pid1,200
+emp3,pid3,300
+emp1,pid3,400
+emp3,pid1,500
+emp2,pid2,100
+emp2,pid3,500
+emp3,pid2,2300
+emp2,pid1,220
+emp1,pid2,2440
